@@ -3,19 +3,21 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0rem 0.3rem 1.9rem #0000000f;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   // position: fixed;
+  position: relative;
+  z-index:10;
   .head-title {
     display: flex;
     align-items: center;
     .menu {
-      font-size: 2.2rem;
-      padding: 0 2rem 0 1rem;
+      font-size: 2rem;
+      padding: 0 2rem 0 0;
     }
     .head-logo {
       img {
-        width: 13rem;
-        height: 3rem;
+        width: 11rem;
+        height: 2.7rem;
       }
     }
   }
@@ -23,14 +25,13 @@
   .head-inputs {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.1rem;
     .search-form {
       display: flex;
       position: relative;
-      position: relative;
       .search-icon {
         position: absolute;
-        top: 0.8rem;
+        top: 0.7rem;
         left: 1rem;
         img {
           width: 1rem;
@@ -39,14 +40,14 @@
       }
       input {
         width: 28rem;
-        height: 2.5rem;
+        height: 2.4rem;
         background-color: #f8f8f8;
         border-radius: 0.4rem;
         padding-left: 3rem;
       }
       ::placeholder {
         color: #a0a5b9;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
     .sound {
@@ -84,10 +85,11 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      cursor: pointer;
       .profile-photo {
         img {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 3.4rem;
+          height: 3.4rem;
         }
       }
       ul {
@@ -95,11 +97,11 @@
         li {
           h4 {
             text-align: end;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 700;
           }
           h6 {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 400;
           }
         }

@@ -24,6 +24,9 @@
             color: #a0a5b9;
           }
         }
+        a:checked {
+          color: #f30808;
+        }
       }
     }
   }
@@ -33,8 +36,8 @@
     .tab-head {
       background-color: #ffffff;
       margin-bottom: 0.5rem;
-      .radio{
-        display:none;
+      .radio {
+        display: none;
       }
       .tabs {
         display: flex;
@@ -42,41 +45,171 @@
           font-size: 0.9rem;
           cursor: pointer;
           padding: 1rem 2rem;
+          color: #95939d;
         }
       }
     }
-    .tab-head #one:checked ~ .body-contents .panels #one-panel,
-    .tab-head #two:checked ~ .body-contents .panels #two-panel,
-    .tab-head #three:checked ~ .body-contents .panels #three-panel {
-      display: block;
-    }
-    .tab-head #one:checked ~ .tab-head .tabs #one-tab,
-    .tab-head #two:checked ~ .tab-head .tabs #two-tab,
-    .tab-head #three:checked ~ .tab-head .tabs #three-tab {
+    .tab-head #one:checked ~ .tabs #one-tab,
+    .tab-head #two:checked ~ .tabs #two-tab,
+    .tab-head #three:checked ~ .tabs #three-tab,
+    .tab-head #four:checked ~ .tabs #four-tab,
+    .tab-head #five:checked ~ .tabs #five-tab,
+    .tab-head #six:checked ~ .tabs #six-tab {
       background: #fffffff6;
-      color: #000;
-      border-bottom: 3px solid #000;
+      color: #f30808;
+      border-bottom: 0.2rem solid #f30808;
     }
+
     .body-contents {
       background-color: #ffffff;
       width: 100%;
       height: 100%;
-      //   .panels{
-      //     background:#fffffff6;
-      //     min-height:200px;
-      //     overflow:hidden;
-      //     .panel{
-      //         animation: fadein .8s;
-      //       }
-      //       @keyframes fadein {
-      //           from {
-      //               opacity:0;
-      //           }
-      //           to {
-      //               opacity:1;
-      //           }
-      //       }
-      //   }
+      .body-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        .search-form {
+          display: flex;
+          position: relative;
+          .search-icon {
+            position: absolute;
+            top: 0.6rem;
+            left: 1rem;
+            img {
+              width: 0.9rem;
+              height: 0.9rem;
+            }
+          }
+          input {
+            width: 25rem;
+            height: 2.2rem;
+            background-color: #f8f8f8;
+            border-radius: 0.2rem;
+            padding-left: 3rem;
+          }
+          ::placeholder {
+            color: #a0a5b9;
+            font-size: 0.7rem;
+          }
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          .filter {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.6rem 0.8rem;
+            border-radius: 3px;
+            background-color: #f8f8f8;
+            color: #95939d;
+            img {
+              width: 0.8rem;
+              height: 0.5rem;
+            }
+          }
+          .export {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.6rem 0.8rem;
+            border-radius: 3px;
+            background-color: #f8f8f8;
+            color: #95939d;
+            img {
+              width: 0.9rem;
+              height: 0.7rem;
+            }
+          }
+          .upload {
+            button {
+              color: #00b197;
+              border: 0.1rem solid #00b197;
+              background-color: #ffffff;
+              padding: 0.5rem 0.8rem;
+              font-size: 0.6rem;
+            }
+          }
+          .add {
+            button {
+              color: #ffffff;
+              background-color: #00b197;
+              border: 0.1rem solid #00b197;
+              padding: 0.5rem 0.9rem;
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+      .body-lists {
+        .list-head {
+          ul {
+            background-color: #f2f1f3;
+            display: flex;
+            list-style-type: none;
+            padding: 1rem 0;
+            color: #171547;
+            .type {
+              width: 10rem;
+              text-align: center;
+            }
+            .seller {
+              width: 12rem;
+            }
+            .selleradd {
+              width: 21rem;
+            }
+            .pointof {
+              width: 14rem;
+            }
+            .status {
+              width: 7rem;
+            }
+            .type select,
+            .pointof select,
+            .totalprop select {
+              outline: none;
+              border: none;
+              background-color: #f2f1f3;
+              color: #171547;
+              font-size: 0.8rem;
+            } 
+            li p {
+              font-size: 0.9rem;
+              color: #171547;
+            }
+          }
+        }
+        .list-body{
+          ul{
+            list-style: none;
+            display: flex;
+            .list-1{
+              
+            }
+            .list-2{
+
+            }
+            .list-3{
+
+            }
+            .list-4{
+
+            }
+            .list-5{
+
+            }
+            .list-6{
+
+            }
+            .list-7{
+
+            }
+           
+          }
+        }
+      }
     }
   }
 }
