@@ -34,7 +34,6 @@
       }
     }
     .body {
-      width: 76.5rem;
       position: absolute;
       left: 7rem;
       top: 1rem;
@@ -66,6 +65,7 @@
       }
 
       .body-contents {
+        width: 90vw;
         background-color: #ffffff;
         .body-head {
           display: flex;
@@ -150,28 +150,30 @@
             ul {
               background-color: #f2f1f3;
               display: flex;
+              justify-content: space-around;
               list-style-type: none;
               padding: 1rem 0;
               color: #171547;
+              @media only #{'screen and (max-width: 1200px)'}{
+                gap: 2rem;
+              }
               .type {
-                width: 10rem;
-                text-align: center;
+                padding: 0 1rem 0 3rem;
               }
               .seller {
-                width: 12rem;
+                padding: 0 3rem 0 0;
               }
               .selleradd {
-                width: 21rem;
+                padding: 0 4.5rem 0 3rem;
               }
               .pointof {
-                width: 13rem;
+                padding: 0 1rem 0 4.5rem;
               }
               .status {
-                width: 4rem;
+                padding: 0 1rem 0 1rem;
               }
               .totalprop {
-                width: 15rem;
-                text-align: center;
+                padding: 0 5rem 0 0;
               }
               .type select,
               .pointof select,
@@ -192,15 +194,19 @@
             ul {
               list-style: none;
               display: flex;
+              justify-content: space-around;
+              padding: 0 0 0 2rem;
               align-items: center;
               height: 5rem;
               border-bottom: 1px solid #f2f1f3;
+              @media only #{'screen and (max-width: 1200px)'}{
+                gap: 2rem;
+              }
               .list-1 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 1.5rem;
-                width: 10rem;
                 .drag{
                   color: #95939D;
                 }
@@ -215,7 +221,7 @@
                 }
               }
               .list-2 {
-                width: 12rem;
+                padding: 0 1rem 0 0;
                 span {
                   display: flex;
                   align-items: center;
@@ -227,13 +233,13 @@
                 }
               }
               .list-3 {
-                width: 21rem;
+                padding: 0 1rem 0 0;
                 p {
                   font-size: 0.9rem;
                 }
               }
               .list-4 {
-                width: 13rem;
+                padding: 0 8.5rem 0 0;
                 .persons {
                   position: relative;
                   .person-2 {
@@ -275,8 +281,7 @@
                 }
               }
               .list-5 {
-                width: 4rem;
-                text-align: center;
+                padding: 0 4rem 0 0;
                 button {
                   padding: 0.7rem 1.2rem;
                   font-size: 0.7rem;
@@ -286,8 +291,7 @@
                 }
               }
               .list-6 {
-                width: 12rem;
-                text-align: center;
+                padding: 0 3.5rem 0 0;
                 h4{
                   color: #080031;
                   font-size: 0.9rem;
@@ -295,8 +299,6 @@
                 }
               }
               .list-7 {
-                width: 4rem;
-                text-align: center;
                 position: relative;
                 .dot {
                   padding: 0.4rem;
