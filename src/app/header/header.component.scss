@@ -3,10 +3,13 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0rem 0.3rem 1.9rem #0000000f;
+  background-color: #FFFFFF;
   padding: 1rem 2rem;
-  // position: fixed;
-  position: relative;
-  z-index:10;
+  position: fixed;
+  width: 100%;
+  z-index:3;
+  top: 0;
+  left: 0;
   .head-title {
     display: flex;
     align-items: center;

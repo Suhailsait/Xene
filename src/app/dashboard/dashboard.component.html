@@ -1,138 +1,192 @@
 <main class="dashboard">
-  <section class="sidenav">
-    <ul class="navicons">
-      <li>
-        <a href="#"><span class="material-icons-round"> dashboard </span></a>
-      </li>
-      <li>
-        <a href="#"
-          ><span class="material-icons-round" style="color: #f30808">
-            person
-          </span></a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><span class="material-icons-round"> real_estate_agent </span></a
-        >
-      </li>
-      <li>
-        <a href="#"><span class="material-icons"> help_center </span></a>
-      </li>
-      <li>
-        <a href="#"
-          ><span class="material-icons-outlined"> question_answer </span></a
-        >
-      </li>
-    </ul>
-  </section>
-  <section class="body">
-    <aside class="tab-head">
-      <input class="radio" id="one" name="group" type="radio" checked />
-      <input class="radio" id="two" name="group" type="radio" />
-      <input class="radio" id="three" name="group" type="radio" />
-      <input class="radio" id="four" name="group" type="radio" />
-      <input class="radio" id="five" name="group" type="radio" />
-      <input class="radio" id="six" name="group" type="radio" />
-      <div class="tabs">
-        <label class="tab" id="one-tab" for="one">Sellers</label>
-        <label class="tab" id="two-tab" for="two">Buyers</label>
-        <label class="tab" id="three-tab" for="three">Rent</label>
-        <label class="tab" id="four-tab" for="four">Transaction Managers</label>
-        <label class="tab" id="five-tab" for="five">Builders</label>
-        <label class="tab" id="six-tab" for="six">Transporters</label>
-      </div>
-    </aside>
-    <aside class="body-contents">
-      <span class="body-head">
-        <span class="form-group search-form">
-          <span class="search-icon">
-            <img src="../../assets/images/search@2x.png" alt="" />
+  <aside class="dash-content">
+    <section class="sidenav">
+      <ul class="navicons">
+        <li>
+          <a href="#"><span class="material-icons-round"> dashboard </span></a>
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-icons-round" style="color: #f30808">
+              person
+            </span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-icons-round"> real_estate_agent </span></a
+          >
+        </li>
+        <li>
+          <a href="#"><span class="material-icons"> help_center </span></a>
+        </li>
+        <li>
+          <a href="#"
+            ><span class="material-icons-outlined"> question_answer </span></a
+          >
+        </li>
+      </ul>
+    </section>
+    <section class="body">
+      <aside class="tab-head">
+        <input class="radio" id="one" name="group" type="radio" checked />
+        <input class="radio" id="two" name="group" type="radio" />
+        <input class="radio" id="three" name="group" type="radio" />
+        <input class="radio" id="four" name="group" type="radio" />
+        <input class="radio" id="five" name="group" type="radio" />
+        <input class="radio" id="six" name="group" type="radio" />
+        <div class="tabs">
+          <label class="tab" id="one-tab" for="one">Sellers</label>
+          <label class="tab" id="two-tab" for="two">Buyers</label>
+          <label class="tab" id="three-tab" for="three">Rent</label>
+          <label class="tab" id="four-tab" for="four"
+            >Transaction Managers</label
+          >
+          <label class="tab" id="five-tab" for="five">Builders</label>
+          <label class="tab" id="six-tab" for="six">Transporters</label>
+        </div>
+      </aside>
+      <aside class="body-contents">
+        <span class="body-head">
+          <span class="form-group search-form">
+            <span class="search-icon">
+              <img src="../../assets/images/search@2x.png" alt="" />
+            </span>
+            <input type="search" placeholder="Search" />
           </span>
-          <input type="search" placeholder="Search" />
+          <span class="btns">
+            <span class="filter">
+              <img src="../../assets/images/noun-filter-1050706.svg" alt="" />
+              <p>Filter</p>
+            </span>
+            <span class="export">
+              <img src="../../assets/images/Icon feather-share.svg" alt="" />
+              <p>Export</p>
+            </span>
+            <span class="upload">
+              <button>Upload Excel</button>
+            </span>
+            <span class="add">
+              <button>Add New</button>
+            </span>
+          </span>
         </span>
-        <span class="btns">
-          <span class="filter">
-            <img src="../../assets/images/noun-filter-1050706.svg" alt="" />
-            <p>Filter</p>
-          </span>
-          <span class="export">
-            <img src="../../assets/images/Icon feather-share.svg" alt="" />
-            <p>Export</p>
-          </span>
-          <span class="upload">
-            <button>Upload Excel</button>
-          </span>
-          <span class="add">
-            <button>Add New</button>
-          </span>
-        </span>
-      </span>
 
-      <span class="body-lists">
-        <span class="list-head">
-          <ul>
-            <li class="type">
-              <select name="" id="">
-                <option value="" class="typeopt">TYPE</option>
-              </select>
-            </li>
-            <li class="seller">
-              <p>SELLER</p>
-            </li>
-            <li class="selleradd">
-              <p>SELLER ADDRESS</p>
-            </li>
-            <li class="pointof">
-              <select name="" id="">
-                <option value="" class="pointofopt">POINT OF CONTACT</option>
-              </select>
-            </li>
-            <li class="status">
-              <p>STATUS</p>
-            </li>
-            <li class="totalprop">
-              <select name="" id="">
-                <option value="" class="totalpropopt">TOTAL PROPERTIES</option>
-              </select>
-            </li>
-          </ul>
+        <span class="body-lists">
+          <span class="list-head">
+            <ul>
+              <li class="type">
+                <select name="" id="">
+                  <option value="" class="typeopt">TYPE</option>
+                </select>
+              </li>
+              <li class="seller">
+                <p>SELLER</p>
+              </li>
+              <li class="selleradd">
+                <p>SELLER ADDRESS</p>
+              </li>
+              <li class="pointof">
+                <select name="" id="">
+                  <option value="" class="pointofopt">POINT OF CONTACT</option>
+                </select>
+              </li>
+              <li class="status">
+                <p>STATUS</p>
+              </li>
+              <li class="totalprop">
+                <select name="" id="">
+                  <option value="" class="totalpropopt">
+                    TOTAL PROPERTIES
+                  </option>
+                </select>
+              </li>
+            </ul>
+          </span>
+          <span class="list-body">
+            <ul>
+              <li class="list-1">
+                <span class="material-icons-round drag"> drag_indicator </span>
+                <span class="icon">
+                  <span class="material-icons-round"> home </span>
+                </span>
+              </li>
+              <li class="list-2">
+                <span>
+                  <img
+                    src="../../assets/images/MicrosoftTeams-image.png"
+                    alt=""
+                  />
+                  <h3>ABC Company</h3>
+                </span>
+              </li>
+              <li class="list-3">
+                <p>1693 Alice Court, Annapolis MD 21401</p>
+              </li>
+              <li class="list-4">
+                <span class="persons">
+                  <span class="person-1">
+                    <img
+                      src="../../assets/images/smiling-businesswoman-typing-laptop-sitting-cafe.jpg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="person-2">
+                    <img
+                      src="../../assets/images/businesswoman-rubbing-holding-hands-isolated-white-background.jpg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="person-3">
+                    <img
+                      src="../../assets/images/smiling-businesswoman-typing-laptop-sitting-cafe.jpg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="person-4">
+                    <img
+                      src="../../assets/images/businesswoman-rubbing-holding-hands-isolated-white-background.jpg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="person-5">
+                    <img
+                      src="../../assets/images/smiling-businesswoman-typing-laptop-sitting-cafe.jpg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="person-6">
+                    <p>+14</p>
+                  </span>
+                </span>
+              </li>
+              <li class="list-5">
+                <button>Active</button>
+              </li>
+              <li class="list-6">
+                <h4>05</h4>
+              </li>
+              <li class="list-7">
+                <span class="material-icons-round dot"> more_vert </span>
+                <span class="hover-content">
+                  <span class="edit">
+                    <span class="material-icons-outlined"> edit </span>
+                    <a href="#">Edit</a>
+                  </span>
+                  <span class="delete">
+                    <span class="material-icons-outlined"> delete </span>
+                    <a href="#">Delete</a>
+                  </span>
+                  <span class="share">
+                    <span class="material-icons-outlined"> share </span>
+                    <a href="#">Share</a>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </span>
         </span>
-        <span class="list-body">
-          <ul>
-            <li class="list-1">
-              <span class="material-icons-round"> drag_indicator </span>
-              <span class="icon">
-                <span class="material-icons-round"> home </span>
-              </span>
-            </li>
-            <li class="list-2">
-              <span>
-                <img
-                  src="../../assets/images/MicrosoftTeams-image.png"
-                  alt=""
-                />
-                <h3>ABC Company</h3>
-              </span>
-            </li>
-            <li class="list-3">
-              <p>1693 Alice Court, Annapolis MD 21401</p>
-            </li>
-            <li class="list-4">
-              <span> </span>
-            </li>
-            <li class="list-5">
-              <button>Active</button>
-            </li>
-            <li class="list-6">
-              <h4>05</h4>
-            </li>
-            <li class="list-7">
-              <span class="material-icons-round"> more_vert </span>
-            </li>
-          </ul>
-        </span>
-      </span>
-    </aside>
-  </section>
+      </aside>
+    </section>
+  </aside>
 </main>
